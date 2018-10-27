@@ -2,92 +2,106 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class SpriteAnimator : MonoBehaviour 
-{
-public AAnimation[] animations;	
- public AAnimation currentAnimation;
- private SpriteRenderer spriteRenderer;
+{	
 
-[System.Serializable]
-public class AAnimation
-{
-    public Sprite[] sprites;
-	public AAnimation previousAnimation;
-	public AAnimation nextAnimation;
+	public List<int> spriteAniamtionsLinkedList;
 
-    public float interval;
-    [HideInInspector]public float time;
-	[HideInInspector]public int currentSpriteFrame;
-    
-    
-	
+	private SpriteRenderer spriteRenderer;
+	public SpriteAnimationSetScriptableObject spriteAnimationSetScriptable;
+	private float time;
+	private int frameIndex;
+	private int currrentSpriteAnimatinIndex;
+	[HideInInspector] public bool pause = true;
 
-}
-	// Use this for initialization
-	void Start () 
+	public float speed = 1;
+
+	public void Start()
 	{
-		LinkedAnimations();
-		
 		spriteRenderer = GetComponent<SpriteRenderer>();
-		
 	}
-	
-	// Update is called once per frame
-	void Update () 
+
+	public void Update()
 	{
-			currentAnimation.time += Time.deltaTime;
-			
-            if (currentAnimation.time > currentAnimation.interval )
-            {
-				currentAnimation.currentSpriteFrame++;
-				if (currentAnimation.currentSpriteFrame <= currentAnimation.sprites.Length - 1)
-				{
-					spriteRenderer.sprite = currentAnimation.sprites[currentAnimation.currentSpriteFrame];
-					currentAnimation.time = 0;
-                }
-                
-				if(Input.GetKeyDown(KeyCode.Q))
-				{
-				currentAnimation = animations[0];
-				spriteRenderer.sprite = currentAnimation.sprites[0];
-				currentAnimation.time = 0;
-				currentAnimation.currentSpriteFrame = 0;
-                
-                
-				}
-					
-                if(Input.GetKeyDown(KeyCode.K))
-                {
-                currentAnimation = currentAnimation.nextAnimation;
-				spriteRenderer.sprite = currentAnimation.sprites[0];
-                currentAnimation.time = 0;
-				currentAnimation.currentSpriteFrame = 0;
-                    
-				}
+		if (pause)
+			spriteRenderer.material.color = new Color(0.1f,0.1f,0.1f);
+		else
+			spriteRenderer.material.color = Color.white;
+
+		if (pause || spriteAniamtionsLinkedList.Count == 0)
+			return;
+
+		time -= Time.deltaTime * speed;
+		if (time <= 0)
+		{
+
+			time = GetCurrentAnimation().interval;
+			frameIndex++;
+			if (frameIndex > GetCurrentAnimation().sprites.Length - 1)
+			{
+				frameIndex = 0;
+				currrentSpriteAnimatinIndex++;
+
+				if (currrentSpriteAnimatinIndex > spriteAniamtionsLinkedList.Count - 1)
+					pause = true;
+
 			}
-		
+			
+			UpdateSpriteRenderer();
+		}
 	}
 
-	void LinkedAnimations()
+	public void Play(string id)
 	{
-		animations[0].previousAnimation = animations[animations.Length - 1];
-		animations[animations.Length - 1].nextAnimation = animations[0];
+		int a = 0;
+		foreach(var i in spriteAnimationSetScriptable.spriteAnimations)
+		{
+			if (i.id == id && GetCurrentAnimation() != i)
+			{
+				frameIndex = 0;
+				currrentSpriteAnimatinIndex = a;
+				time = i.interval;
+				UpdateSpriteRenderer();
+				return;
+			}
+			a ++;
+		}
 
-		for(int i = 0; i < animations.Length - 1; i++)
-			animations[i].nextAnimation = animations[i + 1];
-		for(int i = animations.Length - 1; i > 1; i--)
-			animations[i].previousAnimation = animations[i - 1];
+		pause = false;
 	}
 
+	public void ReplayAll()
+	{
+		currrentSpriteAnimatinIndex = 0;
+		pause = false;
+	}
 
+	public void Add(string id)
+	{
+		int a = 0;
+		foreach(var i in spriteAnimationSetScriptable.spriteAnimations)
+		{
+			if (i.id == id)
+			{
+				spriteAniamtionsLinkedList.Add(a);
+				return;
+			}
+			a ++;
+		}
+	}
 
+	private void UpdateSpriteRenderer()
+	{
+		if (pause)
+			return;
 
+		spriteRenderer.sprite = GetCurrentAnimation().sprites[frameIndex];
+		spriteRenderer.flipX =  GetCurrentAnimation().flipX;
+		spriteRenderer.flipY =  GetCurrentAnimation().flipY;
+	}
+
+	private SpriteAnimation GetCurrentAnimation()
+	{
+		return spriteAnimationSetScriptable.spriteAnimations[spriteAniamtionsLinkedList[currrentSpriteAnimatinIndex]];
+	}
 }
-
-
-
-
-
-
-
