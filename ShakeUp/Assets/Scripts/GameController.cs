@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
 	{
 		spriteAnimatorPlayer1 = gameObject.transform.GetChild(0).GetComponent<SpriteAnimator>();
 		spriteAnimatorPlayer2 = gameObject.transform.GetChild(1).GetComponent<SpriteAnimator>();
+		
 
 	}
 	
@@ -24,8 +25,8 @@ public class GameController : MonoBehaviour
 		if (UIController.uMessaage != "" && UIController.uMessaage != null && spriteAnimatorPlayer1.pause)
 		{
 			
-			spriteAnimatorPlayer1.Add(UIController.uMessaage);
-			spriteAnimatorPlayer2.Add(UIController.uMessaage);
+			spriteAnimatorPlayer1.AddAnimation(UIController.uMessaage);
+			spriteAnimatorPlayer2.AddAnimation(UIController.uMessaage);
 
 			spriteAnimatorPlayer1.ReplayAll();
 			spriteAnimatorPlayer2.ReplayAll();

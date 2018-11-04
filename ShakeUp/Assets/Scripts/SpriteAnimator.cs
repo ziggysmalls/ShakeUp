@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpriteAnimator : MonoBehaviour 
 {	
 
-	public List<int> spriteAniamtionsLinkedList;
+	public List<int> spriteAniamtionsLinkedList = null;
 
 	private SpriteRenderer spriteRenderer;
 	public SpriteAnimationSetScriptableObject spriteAnimationSetScriptable;
@@ -76,18 +76,17 @@ public class SpriteAnimator : MonoBehaviour
 		pause = false;
 	}
 
-	public void Add(string id)
+	public void AddAnimation(string id)
 	{
-		int a = 0;
-		foreach(var i in spriteAnimationSetScriptable.spriteAnimations)
-		{
-			if (i.id == id)
+		for(int i = 0; i < spriteAnimationSetScriptable.spriteAnimations.Length; i++)
 			{
-				spriteAniamtionsLinkedList.Add(a);
-				return;
+				if(id == spriteAnimationSetScriptable.spriteAnimations[i].id)
+				{
+					spriteAniamtionsLinkedList.Add(i);
+				}
+
+					
 			}
-			a ++;
-		}
 	}
 
 	private void UpdateSpriteRenderer()

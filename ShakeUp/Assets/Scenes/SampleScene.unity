@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAniamtionsLinkedList: 
-  spriteAnimationSetScriptable: {fileID: 11400000, guid: c60db675ebb589a4eb5b69040a862c69,
+  spriteAnimationSetScriptable: {fileID: 11400000, guid: f4ff336f45b69c54ba03e164079a7044,
     type: 2}
   pause: 1
   speed: 3
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteAniamtionsLinkedList: 
-  spriteAnimationSetScriptable: {fileID: 11400000, guid: 293eb04643f53b04289d1e0cd96b00f8,
+  spriteAnimationSetScriptable: {fileID: 11400000, guid: 008bd299e610007448d91b4f53f76093,
     type: 2}
   pause: 1
   speed: 3
