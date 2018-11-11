@@ -187,3 +187,35 @@ MonoBehaviour:
     flipX: 0
     flipY: 0
     interval: 0.1
+  - id: LowFive
+    sprites:
+    - {fileID: 21300000, guid: 471a0c55f8a5ab04baa77bfc59590f37, type: 3}
+    - {fileID: 21300000, guid: 91b4fffe6bdf40d4aa439997a825cc7a, type: 3}
+    - {fileID: 21300000, guid: 7e391ebc12c06f64f961a48bdf75d726, type: 3}
+    - {fileID: 21300000, guid: f0f51424aecf38e4c8f594501ed64722, type: 3}
+    - {fileID: 21300000, guid: 720fc414968926545bca1b975f19a298, type: 3}
+    - {fileID: 21300000, guid: 19eacdb19442e2e4ea8e0ae1c3d65740, type: 3}
+    - {fileID: 21300000, guid: 17cc1d6c4c6516c438a9d6baf6ee69c6, type: 3}
+    - {fileID: 21300000, guid: 6082fdb75917aca46b6d378969c95e26, type: 3}
+    - {fileID: 21300000, guid: f4a450a9713c03e4eae086ee929581bc, type: 3}
+    - {fileID: 21300000, guid: 0a740270867579d45b45290a734a13c8, type: 3}
+    - {fileID: 21300000, guid: 0e7647848d49df241916c609101839d4, type: 3}
+    - {fileID: 21300000, guid: 9229bf03520c95c4d9344df5e7647e27, type: 3}
+    - {fileID: 21300000, guid: dc5e8c4b6c1779346b915172c14fc0f2, type: 3}
+    - {fileID: 21300000, guid: 1e93185712b1ba14a96791a61dcbd052, type: 3}
+    - {fileID: 21300000, guid: 9a606c5e48abbb74fbb4106a605ad8e2, type: 3}
+    - {fileID: 21300000, guid: 42c47a5d425bf874193cb466f4016619, type: 3}
+    - {fileID: 21300000, guid: 413bfca2182a2bf40a65fca4bd48f717, type: 3}
+    - {fileID: 21300000, guid: f1fa3571e029fe646b438f2a8e9205d6, type: 3}
+    - {fileID: 21300000, guid: 117503a4026891c4b8921cfb1d99164d, type: 3}
+    - {fileID: 21300000, guid: b208304a45e194041b2a413f1d9702d0, type: 3}
+    - {fileID: 21300000, guid: aa33d2cdb0801e94f93797ffeb4157c9, type: 3}
+    - {fileID: 21300000, guid: 410fc5464cc114842ae527817a3e218e, type: 3}
+    - {fileID: 21300000, guid: 4eb1bdd1a2428b1448cb674c6f559be5, type: 3}
+    - {fileID: 21300000, guid: 98d7108e751962c4d8e16e7e77edb8de, type: 3}
+    - {fileID: 21300000, guid: d42a8e55b90e4024b9bf7038375a083c, type: 3}
+    - {fileID: 21300000, guid: 5129445b099893f4dbb994e337ecbabb, type: 3}
+    - {fileID: 21300000, guid: a11fdc67ba7de4047b6f44363b49d142, type: 3}
+    flipX: 0
+    flipY: 0
+    interval: 0.1

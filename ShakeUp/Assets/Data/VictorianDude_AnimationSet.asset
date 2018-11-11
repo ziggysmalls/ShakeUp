@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016e912ce45f1b54ea3371ccaa98b4fd, type: 3}
+  m_Name: VictorianDude_AnimationSet
+  m_EditorClassIdentifier: 
+  spriteAnimations:
+  - id: Wave
+    sprites:
+    - {fileID: 21300000, guid: f08956ab1be3980409fd8e0eeefcbdbb, type: 3}
+    - {fileID: 21300000, guid: 4942c1d1a1b2168489a7e3ad12cb5380, type: 3}
+    - {fileID: 21300000, guid: 039b0044c8abfb84eabeadb16a79c7c2, type: 3}
+    - {fileID: 21300000, guid: 97c26ddc0c60c7e4883a567d01e3f352, type: 3}
+    - {fileID: 21300000, guid: ff25be91f2584c54bbd73462ef573bc8, type: 3}
+    - {fileID: 21300000, guid: dfaa2c7d701aa234482f98e9ed50875a, type: 3}
+    - {fileID: 21300000, guid: 828632f44123f984087df82ce257737f, type: 3}
+    - {fileID: 21300000, guid: bab5afbed75dca64d83c2de7f5061ffa, type: 3}
+    - {fileID: 21300000, guid: f6d361d2b6b104c40a9db051ef74f30f, type: 3}
+    - {fileID: 21300000, guid: 42128a8f96438ad48ac21e8068f8395e, type: 3}
+    - {fileID: 21300000, guid: a4bed902d825291468ec2d39c4dbb527, type: 3}
+    - {fileID: 21300000, guid: 4c1b7d93d6d77284f9407d921bfd3b95, type: 3}
+    - {fileID: 21300000, guid: 308b2c136d16b1f448fb28e5dfcbe2d4, type: 3}
+    - {fileID: 21300000, guid: 4b1c1e0975f96ba4783dbb3be1a0c8c9, type: 3}
+    - {fileID: 21300000, guid: 556d5d9464d261b45b7417d8fff4d736, type: 3}
+    - {fileID: 21300000, guid: 8e7c169017b4c574fa6ac73db010c477, type: 3}
+    - {fileID: 21300000, guid: 959e1ef76ae10b84d840e122fab17ab4, type: 3}
+    - {fileID: 21300000, guid: 06353c86347c7584c83bb0688f403a35, type: 3}
+    - {fileID: 21300000, guid: 7b7f1ff25c8324e4c973cb7632c53586, type: 3}
+    - {fileID: 21300000, guid: ec301df031df113478f6b50dcaa3dc7a, type: 3}
+    - {fileID: 21300000, guid: 591c2c10665398b48a431f69b9c543a0, type: 3}
+    flipX: 0
+    flipY: 0
+    interval: 0.1

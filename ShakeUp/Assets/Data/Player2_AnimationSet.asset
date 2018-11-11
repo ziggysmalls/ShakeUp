@@ -187,3 +187,36 @@ MonoBehaviour:
     flipX: 1
     flipY: 0
     interval: 0.1
+  - id: LowFive
+    sprites:
+    - {fileID: 21300000, guid: cd326a6b6915fa24f9d53aa6d9de8ebc, type: 3}
+    - {fileID: 21300000, guid: d9bec3f65f7555848b1a5c89e2dcf65e, type: 3}
+    - {fileID: 21300000, guid: c2cbcff5cd4f14f498ea3bbeb3a036d8, type: 3}
+    - {fileID: 21300000, guid: a1cc6a719ace60944b32e04e8f4b6489, type: 3}
+    - {fileID: 21300000, guid: f5466c7e4a8c8634cb114c5445bbfffb, type: 3}
+    - {fileID: 21300000, guid: 1dd209e06ab992e48839b50ca6dc8f34, type: 3}
+    - {fileID: 21300000, guid: 445184593dcf7064288ea17f36abb53d, type: 3}
+    - {fileID: 21300000, guid: 1bd84e942d5adc4498e17b7b763a1d48, type: 3}
+    - {fileID: 21300000, guid: 5b548aa39cc8ebb4a87b3662896ac927, type: 3}
+    - {fileID: 21300000, guid: 79699091c1497ed4eb8fa5529af46f56, type: 3}
+    - {fileID: 21300000, guid: 0c365ce987a669242aafe996f53af242, type: 3}
+    - {fileID: 21300000, guid: 1e48706c08483aa4b8f8f0548eaed9f1, type: 3}
+    - {fileID: 21300000, guid: 5d7f0be3eb4394340bd61d7b89c48c0a, type: 3}
+    - {fileID: 21300000, guid: 238c8ced28eeedc47adee80cb5d28ccd, type: 3}
+    - {fileID: 21300000, guid: a6bb9b0c41938544ab6775588e439d26, type: 3}
+    - {fileID: 21300000, guid: 0e8d118e870662a4e830e65ed2c8533f, type: 3}
+    - {fileID: 21300000, guid: 8193876c7de12624faf405b23872238d, type: 3}
+    - {fileID: 21300000, guid: 6ea522e89531c26498921674359b4413, type: 3}
+    - {fileID: 21300000, guid: 4c21585269be0b84e8c0e793f6dd17b5, type: 3}
+    - {fileID: 21300000, guid: 261f902b221be784fb27e1aa6f922abc, type: 3}
+    - {fileID: 21300000, guid: b68d7661b772034489a82da8bbb7e710, type: 3}
+    - {fileID: 21300000, guid: df2196ce54d52b34ea37c868badb7993, type: 3}
+    - {fileID: 21300000, guid: 5d961b1c5cfce264497ff5c89662f807, type: 3}
+    - {fileID: 21300000, guid: 01fcfe4084d5b6e46a3c00edd38a43d5, type: 3}
+    - {fileID: 21300000, guid: 7bf2e80cb6f5cd147936527e87614879, type: 3}
+    - {fileID: 21300000, guid: 038357bc712b3d143a4fbc349473b32f, type: 3}
+    - {fileID: 21300000, guid: 1f735f250f651db4c8fe4163b641c630, type: 3}
+    - {fileID: 21300000, guid: bdb3f4235e359984b9182948de3bf797, type: 3}
+    flipX: 0
+    flipY: 0
+    interval: 0.1
